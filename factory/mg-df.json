@@ -1,0 +1,9 @@
+{
+	"name": "mg-df",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ff612557-3a8f-408a-ba33-a4f4fe9905ec",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}
