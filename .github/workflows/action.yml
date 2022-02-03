@@ -25,7 +25,7 @@ jobs:
       - name: run deploy script
         shell: pwsh
         run: |
-          ls df-dev-mg
+          cd df-dev-mg
           $deploymentName = Get-Date -Format "yyyyMMddHHmmss"
 
           az deployment group create --resource-group df-prod --template-file df-dev-mg/ARMTemplateForFactory.json  --name $deploymentName --parameters df-dev-mg/ARMTemplateParametersForFactory.json factoryName=adfmg 
