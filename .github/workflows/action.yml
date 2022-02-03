@@ -12,6 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: get code
+        uses: actions/checkout@v2
+        with:
+          ref: adf_publish
+
       - name: login to azure
         uses: azure/login@v1
         with:
